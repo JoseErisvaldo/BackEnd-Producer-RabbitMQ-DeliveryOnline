@@ -6,9 +6,10 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "start": "nest start --watch",
+    "start": "node dist/main.js",
+    "start:dev": "nest start --watch",
     "start:docker": "docker compose up -d && nest start --watch",
-    "build": "tsc -p tsconfig.build.json"
+    "build": "tsc -p tsconfig.build.json",
   },
   "dependencies": {
     "@nestjs/class-transformer": "^0.4.0",
