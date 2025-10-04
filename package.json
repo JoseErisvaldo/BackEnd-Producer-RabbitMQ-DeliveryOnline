@@ -6,7 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "start": "docker compose up -d && nest start --watch",
+    "start": "nest start --watch",
+    "start:docker": "docker compose up -d && nest start --watch",
     "build": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
